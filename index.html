@@ -12,31 +12,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <main class="p-4">
-    <h1>TRENI FIERI ITALIANI</h1>
-    <p>Ottieni uno sconto in base alla tua età sui chilometri che vuoi percorrere!</p>
-    <div class="form mb-5">
-        <div class="mb-3">
-            <label for="km">
-                Inserisci il numero di chilometri che desideri percorrere
-            </label>
-            <input type="text" name="km">
+<body class="">
+    <main>
+        <div class="jumbo bg-danger p-4 text-white">
+            <h1 class="fw-bold fst-italic mb-3">TRENI FIERI ITALIANI</h1>
+            <p class="fw-bold">Ottieni uno sconto in base alla tua età sui chilometri che vuoi percorrere!</p>
         </div>
-        <div class="mb-3">
-            <label for="age">
-                Inserisci età passeggero
-            </label>
-            <input id="age" type="text" name="age">
+        <div class="form card m-4 p-4 w-50">
+            <div class="mb-3 d-flex flex-column">
+                <label class="mb-2" for="km">
+                    Inserisci il numero di chilometri che desideri percorrere:
+                </label>
+                <input type="text" name="km">
+            </div>
+            <div class="mb-3 d-flex flex-column">
+                <label class="mb-2" for="age">
+                    Inserisci età passeggero:
+                </label>
+                <input id="age" type="text" name="age">
+            </div>
+            <button class="btn btn-outline-primary fit-content">Invia</button>
         </div>
-        <button class="btn btn-primary">Invia</button>
-    </div>
-    <section>
-        <h3>Costo della tratta</h3>
-        <p>Costo Tratta: <span id="track" class="card"></span> &euro;</p>
-        <h3>Prezzo con eventuale sconto applicato</h3>
-        <p class="fw-bold">Prezzo Finale: <span id="priceFinalShow" class="card"></span> &euro;</p>
-    </section>
+        <div class="bg-success text-white">
+            <div class="p-4 w-50">
+                <section class="mb-3">
+                    <h3>Costo della tratta</h3>
+                    <p>Costo Tratta: <span id="track" class="card text-secondary"></span></p>
+                </section>
+                <section class="mb-3">
+                    <h3>Prezzo con eventuale sconto applicato</h3>
+                    <p class="fw-bold mb-3">Prezzo Finale: <span id="priceFinalShow" class="card"></span></p>
+                    <a href="https://i.kym-cdn.com/entries/icons/original/000/005/574/takemymoney.jpg" class="btn btn-outline-light">Acquista</a>
+                </section>
+            </div>
+        </div>
     </main>
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
