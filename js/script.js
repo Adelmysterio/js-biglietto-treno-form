@@ -16,7 +16,7 @@ bottone.addEventListener('click', function () {
 
     };
 
-    const age = Number.parseFloat(document.querySelector('#age').value);
+    const age = Number.parseInt(document.querySelector('#age').value);
 
     if (isNaN(age)) {
 
@@ -43,7 +43,7 @@ bottone.addEventListener('click', function () {
         document.getElementById('priceFinalShow').innerHTML = '&euro; ' + priceFinalShow
     }
 
-    if (age >= 63) {
+    else if (age >= 63) {
 
         let priceDiscounted = (track / 100) * overDiscount;
 
@@ -56,7 +56,7 @@ bottone.addEventListener('click', function () {
         document.getElementById('priceFinalShow').innerHTML = '&euro; ' + priceFinalShow
     }
 
-    else if (age >= 21 && age < 63) {
+    else /* (age >= 21 && age < 63) */ {
 
         let priceFinalShow = track.toFixed(2)
 
