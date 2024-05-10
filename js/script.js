@@ -8,7 +8,7 @@ const bottone = document.querySelector('button');
 
 bottone.addEventListener('click', function () {
 
-    const km = Number.parseInt(document.querySelector('input').value);
+    const km = Number.parseFloat(document.querySelector('input').value);
 
     if (isNaN(km)) {
 
@@ -16,7 +16,7 @@ bottone.addEventListener('click', function () {
 
     };
 
-    const age = Number.parseInt(document.querySelector('#age').value);
+    const age = Number.parseFloat(document.querySelector('#age').value);
 
     if (isNaN(age)) {
 
